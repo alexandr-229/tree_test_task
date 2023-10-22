@@ -13,6 +13,10 @@ export const useWrapper = (zoom: number, tree: Tree) => {
 		setPosition({...position});
 	}, [zoom, tree]);
 
+	useEffect(() => {
+		onCenter();
+	}, []);
+
 	const initialCoors = useMemo(() => {
 		const {
 			x = 0,
@@ -52,8 +56,8 @@ export const useWrapper = (zoom: number, tree: Tree) => {
 	
 		const absoluteZoom = zoom / 100;
 	
-		const treeWidth = initialCoors.width / absoluteZoom;
-		const treeHeight = initialCoors.height / absoluteZoom;
+		const treeWidth = (initialCoors.width / absoluteZoom) || 210;
+		const treeHeight = (initialCoors.height / absoluteZoom) || 210;
 		const buttonsWidth = 60 * absoluteZoom;
 		
 		const x = ((wrapperWidth - treeWidth) / 2) + buttonsWidth;
