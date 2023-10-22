@@ -1,0 +1,35 @@
+.treeItem {
+	display: inline-block;
+	margin-left: 50%;
+	transform: translate(-50%);
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.children {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+
+.line {
+	height: 20px;
+	width: 2px;
+	background-color: rgb(97, 100, 103);
+	position: absolute;
+	left: calc((100% - 90px) / 2);
+}
+
+.horizontalLine {
+	height: 2px;
+	background-color: rgb(97, 100, 103);
+	position: absolute;
+}
+
+.lineUp {
+	top: -20px;
+}
+
+.lineDown {
+	bottom: -20px;
+}

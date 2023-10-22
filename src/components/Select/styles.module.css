@@ -1,0 +1,50 @@
+.wrapper {
+	position: relative;
+}
+
+.header {
+	width: 100px;
+	height: 30px;
+	background-color: rgba(187, 186, 186, 0.448);
+	border-radius: 2px;
+	transition: 0.2s all;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.header:hover {
+	background-color: rgba(187, 186, 186, 0.619);
+}
+
+.header:active {
+	background-color: rgba(187, 186, 186, 0.807);
+}
+
+.body {
+	position: absolute;
+	z-index: 10;
+	top: 35px;
+	transition: 0.2s all;
+	overflow: hidden;
+}
+
+.option {
+	width: 100px;
+	height: 30px;
+	background-color: white;
+	border-radius: 2px;
+	transition: 0.2s all;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.option p {
+	margin: 0 10px 0 27px;
+}
+
+.option:hover {
+	background-color: rgb(176, 173, 173);
+}

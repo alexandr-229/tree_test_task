@@ -1,0 +1,46 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.card {
+	padding: 15px 20px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.075);
+	background-color: white;
+	border-radius: 5px;
+}
+
+.button {
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	background-color: rgba(106, 106, 106, 0.573);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	margin-left: 5px;
+	transition: 0.15s all;
+}
+
+.button:hover {
+	background-color: rgba(106, 106, 106, 0.733);
+}
+
+.button:active {
+	background-color: rgba(106, 106, 106, 0.808);
+}
+
+.button.red {
+	background-color: rgba(240, 80, 80, 0.683);
+}
+
+.button.red:hover {
+	background-color: rgba(240, 80, 80, 0.83);
+}
+
+.button.red:active {
+	background-color: rgba(240, 80, 80, 0.898);
+}

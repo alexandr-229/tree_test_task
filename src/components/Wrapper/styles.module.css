@@ -1,0 +1,12 @@
+.wrapper {
+	min-width: 100%;
+	min-height: 100vh;
+	margin: 0 auto;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+}
+
+.tree {
+	position: absolute;
+}
